@@ -1,7 +1,7 @@
 # A simple Python program that:
 #Takes user input into a table  
 #Displays the table  
-#Finds the largest and smallest* value in a numeric column (e.g., age or marks)
+#Finds the largest and smallest value in a numeric column (e.g., age or marks)
 
 n = int(input("Enter number of records: "))   #Take number of record
 
