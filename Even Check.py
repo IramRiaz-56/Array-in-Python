@@ -1,7 +1,6 @@
 # Python Program
 # To Check and Display Even Number In Araay
 
-
 def insertion(arr, size):   #Function to insert values in array
     for i in range(size):
         val = int(input(f"Enter Element {i+1}: "))
@@ -17,8 +16,7 @@ def even(arr):  #Function to return list of even numbers
     return even_nums
 def displayEven(even_nums):        #Function to display even numbers
     print("Even numbers in array:", even_nums)
-
-
+    
 arr = []
 size = int(input("How many values do you want to enter in the array? "))
 insertion(arr, size)
