@@ -1,0 +1,29 @@
+# Python program
+#Sequential Search in an Array (Linear Search)
+
+
+arr = []  #Empty list to store array elements
+
+#Ask user for the number of elements
+n = int(input("Enter number of elements in array: "))
+
+for i in range(n):  # Take 'n' elements input from the user
+    val = int(input(f"Enter element {i+1}: "))
+    arr.append(val)  # Add each element to the list
+
+# Ask the user for the value to search
+key = int(input("Enter value to search: "))
+
+#Perform sequential (linear) search
+found = False  # Flag to check if element is found
+for i in range(len(arr)):
+    if arr[i] == key:  # Compare each element
+        print(f"Value {key} found at index {i}")
+        found = True
+        break  # Exit the loop when found
+if not found:     #If not found, show appropriate message
+    print(f"Value {key} not found in array.")
+
+    
+
+    
