@@ -1,0 +1,28 @@
+#Python Program
+#Sequential Search and Replace Program in Python
+
+# Input the array from user
+arr = []
+size = int(input("Enter number of elements: "))  # Ask user for array size
+
+#Loop to input elements
+for i in range(size):
+    val = int(input(f"Enter element {i+1}: "))  # Input each value
+    arr.append(val)  # Add value to the array
+#Ask user for the value to search and value to replace
+search_val = int(input("\nEnter the value you want to search: "))
+replace_val = int(input("Enter the new value to replace it with: "))
+
+# Perform sequential (linear) search and replace
+found = False  # Flag to track if value was found
+for i in range(len(arr)):
+    if arr[i] == search_val:
+        arr[i] = replace_val  # Replace value at current index
+        found = True
+        print(f"Value found at index {i} and replaced.")
+
+# Display result
+if not found:
+    print("Value not found in the array.")
+else:
+    print("Updated array:", arr)
